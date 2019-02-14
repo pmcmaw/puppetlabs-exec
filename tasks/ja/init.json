@@ -1,0 +1,18 @@
+{
+  "description": "対象のシステム上で任意のシェルコマンドを実行",
+  "input_method": "stdin",
+  "parameters": {
+    "command": {
+      "description": "実行対象のコマンド。すべての引数を含む。",
+      "type": "String[1]"
+    },
+    "interleave": {
+      "description": "stdoutおよびstderrストリームをインターリーブする(デフォルト: true)。",
+      "type": "Optional[Boolean]"
+    },
+    "failonfail": {
+      "description": "コマンドの終了ステータスが非ゼロの場合にタスクが失敗するかどうか(デフォルト: true)。",
+      "type": "Optional[Boolean]"
+    }
+  }
+}
