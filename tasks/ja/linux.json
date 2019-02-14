@@ -1,0 +1,10 @@
+{
+  "description": "任意のシェルコマンドの実行(puppet agentなし)",
+  "input_method": "environment",
+  "parameters": {
+    "command": {
+      "description": "実行対象のコマンド。すべての引数を含む。",
+      "type": "String[1]"
+    }
+  }
+}
